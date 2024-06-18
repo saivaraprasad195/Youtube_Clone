@@ -69,7 +69,7 @@ header,
 
 #searchbar > #searchInput {
   background-color: white;
-  padding: 10px 12px;
+  padding: 12px 12px;
   border: none;
   background-color: transparent;
   color: white;
@@ -89,7 +89,7 @@ header,
 
 #searchbar > #searchbtn {
   background-color: #272727;
-  padding: 12px 20px 8px 20px;
+  padding: 13px 24px 8px 20px;
   border: none;
   width: 65px;
   border-left: 1px solid #272727;
@@ -144,10 +144,6 @@ li {
 }
 
 #sidebar::-webkit-scrollbar {
-  display: none;
-}
-
-.hidden {
   display: none;
 }
 
@@ -244,23 +240,25 @@ li {
 
 #videos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   justify-content: center;
   padding: 10px;
-  grid-gap: 5px;
+  grid-gap: 10px;
   transition: all 0.3s;
 }
 
 #videos > .videoCard {
   border-radius: 15px;
-  width: 93%;
-  margin: 10px;
+  width: 98%;
+  margin: 15px;
   cursor: pointer;
 
 }
 
 .videoCard > img {
   width: 100%;
+  height: 180px;
+  object-fit:cover;
   border-radius: 15px;
 }
 
@@ -269,17 +267,29 @@ li {
   justify-content: center;
   align-items: start;
   padding: 8px;
-  gap: 10px;
+  gap: 15px;
   color: #fff;
 }
 
 .videoDetails > img {
   width: 50px;
   height: 40px;
+  border-radius: 50%;
+}
+
+.videoDetails .textDetails{
+    width: 100%;
+}
+.videoDetails .textDetails h4{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .videoDetails .textDetails .channelName{
     margin-top: 8px;
+    margin-bottom: 4px;
     transition: color 0.15s;
 }
 
@@ -302,11 +312,23 @@ hide logoContainer,header-links
 then make searchContainer width to 90% on click of search icon
 */
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   #sidebar {
     display: none;
   }
   #mainContainer {
-    grid-template-columns: auto;
+    grid-template-columns: auto ;
+  } 
+}
+
+@media (max-width: 660px){
+  .videoCard > img{
+    height: 260px;
+  }
+  #videos{
+    width:85%;
+    margin: auto;
   }
 }
+
+
