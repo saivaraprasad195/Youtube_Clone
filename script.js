@@ -25,12 +25,10 @@ toggleBtn.addEventListener('click', () => {
 	const sidebar = document.getElementById("sidebar");
 	const maninContainer = document.getElementById("mainContainer");
 	if(window.getComputedStyle(sidebar).display === 'none'){
-		console.log("if");
 		maninContainer.style.gridTemplateColumns = '220px auto';
 		document.querySelector("#sidebar").style.display= 'block';	
 	}
 	else{
-		console.log("else")
 		maninContainer.style.gridTemplateColumns = 'auto';
 		document.querySelector("#sidebar").style.display= 'none';
 	}
@@ -67,7 +65,6 @@ async function fetchVideos(searchValue){
 			currObj.commentCount = calCount(videoItem.commentCount);
 
 			impVideoDetails.push(currObj);
-			console.log(impVideoDetails);
 		});
 
 		//did this to store all the fetchedvideo data, else UI is rendered before fetching data
