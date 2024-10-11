@@ -329,6 +329,9 @@ then make searchContainer width to 90% on click of search icon
     width:85%;
     margin: auto;
   }
+  #uploadbtn, #notificationsbtn{
+    display: none;
+  }
 }
 
 
