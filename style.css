@@ -110,6 +110,7 @@ header,
   background-color: #504d4d;
 }
 
+
 #header-links {
   margin-right: 15px;
 }
@@ -326,7 +327,7 @@ then make searchContainer width to 90% on click of search icon
     height: 260px;
   }
   #videos{
-    width:85%;
+    width:90%;
     margin: auto;
   }
   #uploadbtn, #notificationsbtn{

@@ -518,6 +518,14 @@ details summary img{
     height: 350px;
   }
 
+  #uploadbtn, #notificationsbtn{
+    display: none;
+  }
+
+  #logo{
+    margin: auto 0px;
+  }
+
 }
 
 
@@ -556,6 +564,8 @@ details summary img{
   }
 }
 
+
+
 @media (min-width:501px) and (max-width: 1150px){
   #left{
     max-width: 90%;
@@ -572,5 +582,6 @@ details summary img{
     height: 600px;
     border-radius: 30px;
   }
+
 }
 
